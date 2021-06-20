@@ -1,0 +1,76 @@
+23:45:58.140 [main] INFO  by.epam.main.reader.ShipFileReader - result of readFile is [10 LOAD, 6 UNLOAD, 12 LOAD, 9 UNLOAD, 1 LOAD, 5 UNLOAD]
+23:45:58.212 [main] INFO  by.epam.main.entity.Ship - New Ship with id 0 and 10 containers was created
+23:45:58.212 [main] INFO  by.epam.main.entity.Ship - New Ship with id 1 and 6 containers was created
+23:45:58.212 [main] INFO  by.epam.main.entity.Ship - New Ship with id 2 and 12 containers was created
+23:45:58.220 [main] INFO  by.epam.main.entity.Ship - New Ship with id 3 and 9 containers was created
+23:45:58.220 [main] INFO  by.epam.main.entity.Ship - New Ship with id 4 and 1 containers was created
+23:45:58.220 [main] INFO  by.epam.main.entity.Ship - New Ship with id 5 and 5 containers was created
+23:45:58.220 [main] INFO  by.epam.main.parser.ShipActionParser - Ships from parseMethod: [Ship{shipId=0, shipTask=LOAD, state=ENTER, containerAmount=10}, Ship{shipId=1, shipTask=UNLOAD, state=ENTER, containerAmount=6}, Ship{shipId=2, shipTask=LOAD, state=ENTER, containerAmount=12}, Ship{shipId=3, shipTask=UNLOAD, state=ENTER, containerAmount=9}, Ship{shipId=4, shipTask=LOAD, state=ENTER, containerAmount=1}, Ship{shipId=5, shipTask=UNLOAD, state=ENTER, containerAmount=5}]
+23:45:58.262 [pool-2-thread-3] INFO  by.epam.main.entity.Ship - Ship 2 started LOAD
+23:45:58.252 [pool-2-thread-2] INFO  by.epam.main.entity.Ship - Ship 1 started UNLOAD
+23:45:58.262 [pool-2-thread-1] INFO  by.epam.main.entity.Ship - Ship 0 started LOAD
+23:45:58.268 [pool-2-thread-4] INFO  by.epam.main.entity.Ship - Ship 3 started UNLOAD
+23:45:58.270 [pool-2-thread-5] INFO  by.epam.main.entity.Ship - Ship 4 started LOAD
+23:45:58.272 [pool-2-thread-6] INFO  by.epam.main.entity.Ship - Ship 5 started UNLOAD
+23:45:58.311 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - new Pier with id 0 was created
+23:45:58.311 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - new Pier with id 1 was created
+23:45:58.311 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - new Pier with id 2 was created
+23:45:58.318 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - new Pier with id 3 was created
+23:45:58.318 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - new Pier with id 4 was created
+23:45:58.318 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - new Pier with id 5 was created
+23:45:58.326 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - new Pier with id 6 was created
+23:45:58.326 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - new Pier with id 7 was created
+23:45:58.403 [pool-2-thread-3] INFO  by.epam.main.entity.Terminal - Starting arriving to Pier
+23:45:58.404 [pool-2-thread-2] INFO  by.epam.main.entity.Terminal - Starting arriving to Pier
+23:45:58.404 [pool-2-thread-3] INFO  by.epam.main.entity.Terminal - Arrived to pier: Pier{pierId=0}
+23:45:58.403 [pool-2-thread-5] INFO  by.epam.main.entity.Terminal - Starting arriving to Pier
+23:45:58.403 [pool-2-thread-1] INFO  by.epam.main.entity.Terminal - Starting arriving to Pier
+23:45:58.403 [pool-2-thread-6] INFO  by.epam.main.entity.Terminal - Starting arriving to Pier
+23:45:58.403 [pool-2-thread-4] INFO  by.epam.main.entity.Terminal - Starting arriving to Pier
+23:45:58.405 [pool-2-thread-2] INFO  by.epam.main.entity.Terminal - Arrived to pier: Pier{pierId=1}
+23:45:58.404 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - Pier 0 started LOAD of Ship 2 with 12 containers
+23:45:58.405 [pool-2-thread-2] INFO  by.epam.main.entity.Pier - Pier 1 started UNLOAD of Ship 1 with 6 containers
+23:45:58.405 [pool-2-thread-6] INFO  by.epam.main.entity.Terminal - Arrived to pier: Pier{pierId=2}
+23:45:58.406 [pool-2-thread-1] INFO  by.epam.main.entity.Terminal - Arrived to pier: Pier{pierId=3}
+23:45:58.406 [pool-2-thread-6] INFO  by.epam.main.entity.Pier - Pier 2 started UNLOAD of Ship 5 with 5 containers
+23:45:58.406 [pool-2-thread-1] INFO  by.epam.main.entity.Pier - Pier 3 started LOAD of Ship 0 with 10 containers
+23:45:58.406 [pool-2-thread-4] INFO  by.epam.main.entity.Terminal - Arrived to pier: Pier{pierId=4}
+23:45:58.407 [pool-2-thread-4] INFO  by.epam.main.entity.Pier - Pier 4 started UNLOAD of Ship 3 with 9 containers
+23:45:58.407 [pool-2-thread-5] INFO  by.epam.main.entity.Terminal - Arrived to pier: Pier{pierId=5}
+23:45:58.409 [pool-2-thread-5] INFO  by.epam.main.entity.Pier - Pier 5 started LOAD of Ship 4 with 1 containers
+23:45:58.537 [pool-2-thread-1] INFO  by.epam.main.entity.Terminal - Starting load 40 containers
+23:45:58.538 [pool-2-thread-1] INFO  by.epam.main.entity.Terminal - Finishing load 40 containers, Terminal has 165 containers
+23:45:58.539 [pool-2-thread-1] INFO  by.epam.main.entity.Pier - Pier 3 finished LOAD of Ship 0
+23:45:58.541 [pool-2-thread-1] INFO  by.epam.main.entity.Terminal - Starting leaving to Pier
+23:45:58.542 [pool-2-thread-1] INFO  by.epam.main.entity.Terminal - Left pier: Pier{pierId=3}
+23:45:58.542 [pool-2-thread-1] INFO  by.epam.main.entity.Ship - Ship 0 finished LOAD
+23:45:58.702 [pool-2-thread-2] INFO  by.epam.main.entity.Terminal - Starting unload 6 containers
+23:45:58.704 [pool-2-thread-2] INFO  by.epam.main.entity.Terminal - Finishing unload 6 containers, Terminal has 171 containers
+23:45:58.707 [pool-2-thread-2] INFO  by.epam.main.entity.Pier - Pier 1 finished UNLOAD of Ship 1
+23:45:58.708 [pool-2-thread-2] INFO  by.epam.main.entity.Terminal - Starting leaving to Pier
+23:45:58.715 [pool-2-thread-2] INFO  by.epam.main.entity.Terminal - Left pier: Pier{pierId=1}
+23:45:58.716 [pool-2-thread-2] INFO  by.epam.main.entity.Ship - Ship 1 finished UNLOAD
+23:45:59.128 [pool-2-thread-5] INFO  by.epam.main.entity.Terminal - Starting load 49 containers
+23:45:59.129 [pool-2-thread-5] INFO  by.epam.main.entity.Terminal - Finishing load 49 containers, Terminal has 122 containers
+23:45:59.130 [pool-2-thread-5] INFO  by.epam.main.entity.Pier - Pier 5 finished LOAD of Ship 4
+23:45:59.132 [pool-2-thread-5] INFO  by.epam.main.entity.Terminal - Starting leaving to Pier
+23:45:59.134 [pool-2-thread-5] INFO  by.epam.main.entity.Terminal - Left pier: Pier{pierId=5}
+23:45:59.152 [pool-2-thread-5] INFO  by.epam.main.entity.Ship - Ship 4 finished LOAD
+23:45:59.307 [pool-2-thread-6] INFO  by.epam.main.entity.Terminal - Starting unload 5 containers
+23:45:59.327 [pool-2-thread-6] INFO  by.epam.main.entity.Terminal - Finishing unload 5 containers, Terminal has 127 containers
+23:45:59.331 [pool-2-thread-6] INFO  by.epam.main.entity.Pier - Pier 2 finished UNLOAD of Ship 5
+23:45:59.340 [pool-2-thread-6] INFO  by.epam.main.entity.Terminal - Starting leaving to Pier
+23:45:59.353 [pool-2-thread-6] INFO  by.epam.main.entity.Terminal - Left pier: Pier{pierId=2}
+23:45:59.354 [pool-2-thread-6] INFO  by.epam.main.entity.Ship - Ship 5 finished UNLOAD
+23:45:59.372 [pool-2-thread-4] INFO  by.epam.main.entity.Terminal - Starting unload 9 containers
+23:45:59.373 [pool-2-thread-4] INFO  by.epam.main.entity.Terminal - Finishing unload 9 containers, Terminal has 136 containers
+23:45:59.373 [pool-2-thread-4] INFO  by.epam.main.entity.Pier - Pier 4 finished UNLOAD of Ship 3
+23:45:59.374 [pool-2-thread-4] INFO  by.epam.main.entity.Terminal - Starting leaving to Pier
+23:45:59.374 [pool-2-thread-4] INFO  by.epam.main.entity.Terminal - Left pier: Pier{pierId=4}
+23:45:59.375 [pool-2-thread-4] INFO  by.epam.main.entity.Ship - Ship 3 finished UNLOAD
+23:45:59.400 [pool-2-thread-3] INFO  by.epam.main.entity.Terminal - Starting load 38 containers
+23:45:59.400 [pool-2-thread-3] INFO  by.epam.main.entity.Terminal - Finishing load 38 containers, Terminal has 98 containers
+23:45:59.400 [pool-2-thread-3] INFO  by.epam.main.entity.Pier - Pier 0 finished LOAD of Ship 2
+23:45:59.400 [pool-2-thread-3] INFO  by.epam.main.entity.Terminal - Starting leaving to Pier
+23:45:59.400 [pool-2-thread-3] INFO  by.epam.main.entity.Terminal - Left pier: Pier{pierId=0}
+23:45:59.400 [pool-2-thread-3] INFO  by.epam.main.entity.Ship - Ship 2 finished LOAD

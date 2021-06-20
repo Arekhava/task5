@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="info">
+
+    <Properties>
+        <!--        <property name="LOG_DIR">logs</property>-->
+        <property name="pattern_file">%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</property>
+        <property name="pattern_console">%relative [%t] %-5level %logger{36} - %msg%n</property>
+        <property name="LOG_DIR">logs_roll_arch</property>
+    </Properties>
+
+
+    <TresholdFilter level=" trace"/>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="${pattern_console}"/>
+        </Console>
+        <RollingFile name="FileRolling" fileName="${LOG_DIR}/archlog.txt" append="true"
+                     filePattern="logs/${date:yyyy-MM-dd}/%d{yyyy-MM-dd_HH-mm}_%i.txt.zip">
+            <PatternLayout pattern="${pattern_file}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval = "24"/>
+                <SizeBasedTriggeringPolicy size="25 KB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <Logger name="Log_Console" level="info" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Logger>
+        <Logger name="Log_File" level="info" additivity="false">
+            <AppenderRef ref="FileRolling"/>
+        </Logger>
+
+        <Root level="trace">
+            <AppenderRef ref="FileRolling"/>
+            <AppenderRef ref="Console" level="info"/>
+        </Root>
+    </Loggers>
+</Configuration>
